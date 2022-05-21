@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(51, 50, 50);
+}
+
+#conteudo{
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+#conteudo::after{
+    content: "|";
+    margin-left:4px;
+    opacity: 1;
+    animation: cursorPisca .7s  infinite;
+}
+
+@keyframes cursorPisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
